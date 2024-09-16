@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --header-bg: #10375C;
+    --btn-bg: #2E80CE;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+}
+
+
+/* =========================================== Common =========================================== */
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+    display: inline-block;
+    min-width: 205px;
+    line-height: 60px;
+    border-radius: 999px;
+    background: var(--btn-bg);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+/* =========================================== Header =========================================== */
+
+.header {
+    padding-top: 30px;
+    background: var(--header-bg);
+    min-height: 100vh;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.header__action--login,
+.navbar__link {
+    padding: 8px 21px;
+    color: #C9D2DA;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.navbar__link:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #fff
+}
+
+.navbar__link--active {
+    text-shadow: 1px 0 0 currentColor;
+    color: #fff
+}
+
+.navbar__link--active::before {
+    width: 6px;
+    height: 6px;
+    content: "";
+    position: relative;
+    top: -2px;
+    right: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.header__action--sign-up {
+    min-width: 144px;
+    line-height: 44px;
+    font-size: 1.6rem;
+}
+
+.header__action--login {
+    margin-right: 7px;
+}
