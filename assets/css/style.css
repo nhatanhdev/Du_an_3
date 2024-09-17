@@ -1,108 +1,326 @@
-* {
-    box-sizing: border-box;
-}
-
-:root {
-    --header-bg: #10375C;
-    --btn-bg: #2E80CE;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-size: 1.6rem;
-    font-family: "Sora", sans-serif;
-}
-
-
-/* =========================================== Common =========================================== */
-
-.container {
-    width: 1170px;
-    max-width: calc(100% - 48px);
-    margin: 0 auto;
-}
-
-a {
-    text-decoration: none;
-}
-
-.btn {
-    text-align: center;
-    color: #fff;
-    font-size: 1.8rem;
-    display: inline-block;
-    min-width: 205px;
-    line-height: 60px;
-    border-radius: 999px;
-    background: var(--btn-bg);
-    font-weight: 400;
-    font-style: normal;
-}
-
-.btn:hover {
-    opacity: 0.9;
-}
-
-
-/* =========================================== Header =========================================== */
-
-.header {
-    padding-top: 30px;
-    background: var(--header-bg);
-    min-height: 100vh;
-}
-
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar__list {
-    display: flex;
-}
-
-.header__action--login,
-.navbar__link {
-    padding: 8px 21px;
-    color: #C9D2DA;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.75;
-}
-
-.navbar__link:hover {
-    text-shadow: 1px 0 0 currentColor;
-    color: #fff
-}
-
-.navbar__link--active {
-    text-shadow: 1px 0 0 currentColor;
-    color: #fff
-}
-
-.navbar__link--active::before {
-    width: 6px;
-    height: 6px;
-    content: "";
-    position: relative;
-    top: -2px;
-    right: 8px;
-    display: inline-block;
-    border-radius: 50%;
-    background: #fff;
-}
-
-.header__action--sign-up {
-    min-width: 144px;
-    line-height: 44px;
-    font-size: 1.6rem;
-}
-
-.header__action--login {
-    margin-right: 7px;
-}
+    * {
+        box-sizing: border-box;
+    }
+    
+     :root {
+        --header-bg: #10375C;
+        --btn-bg: #2E80CE;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    body {
+        font-size: 1.6rem;
+        font-family: "Sora", sans-serif;
+    }
+    /* =========================================== Common =========================================== */
+    
+    .container {
+        width: 1170px;
+        max-width: calc(100% - 48px);
+        margin: 0 auto;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .btn {
+        text-align: center;
+        color: #fff;
+        font-size: 1.8rem;
+        display: inline-block;
+        min-width: 205px;
+        line-height: 60px;
+        border-radius: 999px;
+        background: var(--btn-bg);
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .btn:hover {
+        opacity: 0.9;
+    }
+    
+    .section-heading {
+        color: #10375C;
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -1px;
+    }
+    
+    .section-desc {
+        margin-top: 18px;
+        color: #575F66;
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1.67;
+    }
+    /* =========================================== Header =========================================== */
+    
+    .header {
+        padding-top: 30px;
+        background: var(--header-bg);
+        min-height: 100vh;
+    }
+    
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar__list {
+        display: flex;
+    }
+    
+    .header__action--login,
+    .navbar__link {
+        padding: 8px 21px;
+        color: #C9D2DA;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.75;
+    }
+    
+    .navbar__link:hover {
+        text-shadow: 1px 0 0 currentColor;
+        color: #fff
+    }
+    
+    .navbar__link--active {
+        text-shadow: 1px 0 0 currentColor;
+        color: #fff
+    }
+    
+    .navbar__link--active::before {
+        width: 6px;
+        height: 6px;
+        content: "";
+        position: relative;
+        top: -2px;
+        right: 8px;
+        display: inline-block;
+        border-radius: 50%;
+        background: #fff;
+    }
+    
+    .header__action--sign-up {
+        min-width: 144px;
+        line-height: 44px;
+        font-size: 1.6rem;
+    }
+    
+    .header__action--login {
+        margin-right: 7px;
+    }
+    /* =========================================== Hero =========================================== */
+    
+    .hero {
+        display: flex;
+        align-items: center;
+        margin-top: 76px;
+    }
+    
+    .hero__content {
+        width: 44%;
+    }
+    
+    .hero__media {
+        flex: 1;
+    }
+    
+    .hero__heading {
+        color: #FFF;
+        font-size: 7rem;
+        font-weight: 600;
+        letter-spacing: -1.4px;
+        line-height: 1.14;
+        font-style: normal;
+    }
+    
+    .hero__desc {
+        margin-top: 22px;
+        color: #C9D2DA;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.67;
+    }
+    
+    .hero__row {
+        margin-top: 38px;
+        display: flex;
+        align-items: center;
+        gap: 38px;
+    }
+    
+    .hero__phone {
+        color: #FFF;
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 1.67;
+    }
+    
+    .hero__images {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .hero__img {
+        border-radius: 6px;
+        object-fit: cover;
+    }
+    
+    .hero__img-large {
+        width: 330px;
+        height: 540px;
+        margin-right: -6px;
+        z-index: 1;
+    }
+    
+    .hero__img-small {
+        width: 210px;
+        height: 410px;
+    }
+    /* =========================================== Service =========================================== */
+    
+    .service {
+        padding: 170px 0;
+    }
+    
+    .service__heading,
+    .service__desc {
+        text-align: center;
+    }
+    
+    .service__desc {
+        width: 468px;
+        margin: 18px auto 0;
+    }
+    
+    .service__row {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 152px
+    }
+    
+    .service__img {
+        width: 570px;
+        height: 570px;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+    
+    .service-item {
+        padding: 21px;
+        display: flex;
+        align-items: center;
+        width: 470px;
+        border-radius: 10px;
+        background: #FFF;
+        transition: 0.25s;
+    }
+    
+    .service-item:hover {
+        position: relative;
+        box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+    }
+    
+    .service-item:hover .service-item__icon {
+        color: #FFF;
+        background: #2e80ce;
+    }
+    
+    .service-item__icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background: #EFF6FD;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+        flex-shrink: 0;
+        margin-right: 19px;
+        transition: 0.25s
+    }
+    
+    .service-item__heading {
+        color: #10375C;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .service-item__desc {
+        margin-top: 8px;
+        color: #575F66;
+        font-size: 1.6rem;
+        line-height: 1.75;
+    }
+    
+    .service__btn {
+        margin-top: 55px;
+    }
+    /* =========================================== Work =========================================== */
+    
+    .work {
+        padding: 100px 0;
+        background: #F6FBFF;
+    }
+    
+    .work__desc {
+        width: 468px;
+    }
+    
+    .work__list {
+        margin-top: 86px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+    
+    .work-item {
+        padding: 43px;
+        border-radius: 4px;
+        background: #FFF;
+        border: 16px solid #EAF6FF;
+        transition: 0.25s;
+    }
+    
+    .work-item:hover {
+        border-color: #2E80CE;
+        transform: translateY(-16px);
+    }
+    
+    .work-item__heading {
+        margin-top: 18px;
+        color: #10375C;
+        font-size: 2.6rem;
+        font-weight: 600;
+        line-height: 1.38px;
+    }
+    
+    .work-item__desc {
+        margin-top: 28px;
+        color: #575F66;
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 1.75;
+    }
+    
+    .work-item__more {
+        margin-top: 18px;
+        display: inline-block;
+        color: #2E80CE;
+        font-size: 1.6rem;
+        line-height: 1.75;
+    }
